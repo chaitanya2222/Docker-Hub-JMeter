@@ -26,7 +26,7 @@ COPY jdbc/sqljdbc4.jar /jmeter/lib/
 # Change workdir to /jmeter
 WORKDIR /jmeter
 
-RUN jmeter -n -t ./postgresquery.jmx -l ./output.txt
+#RUN jmeter -n -t ./postgresquery.jmx -l ./output.txt
 
 CMD [ "cat", "output.txt" ]
 #CMD ["sleep" , "1000"]
