@@ -28,5 +28,5 @@ WORKDIR /jmeter
 
 #RUN jmeter -n -t ./postgresquery.jmx -l ./output.txt
 
-CMD [ "cat", "output.txt" ]
+#CMD [ "cat", "output.txt" ]
 #CMD ["sleep" , "1000"]
