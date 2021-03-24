@@ -22,6 +22,8 @@ COPY postgresquery.jmx /jmeter/postgresquery.jmx
 # Copy MSSQL and PostgreSQL JDBC Drivers
 COPY jdbc/postgresql-42.2.19.jar /jmeter/lib/
 COPY jdbc/sqljdbc4.jar /jmeter/lib/
+COPY jdbc/mongo-java-driver-3.12.8.jar /jmeter/lib/
+COPY jdbc/mongojdbc3.1.jar /jmeter/lib/
 
 # Change workdir to /jmeter
 WORKDIR /jmeter
